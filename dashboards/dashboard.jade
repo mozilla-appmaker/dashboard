@@ -1,0 +1,15 @@
+extends layout
+
+block title
+  | Appmaker Stats
+
+block content
+  div.gridster
+    ul
+      li(data-row='1', data-col='1', data-sizex='2', data-sizey='1')
+        div(data-id='chef', data-view='Image', data-image="/chef-man.png")
+      li(data-row='1', data-col='1', data-sizex='2', data-sizey='1')
+        div(data-id='contributors', data-title='Contributors', data-view='Number', style="background-color:#3bafff")
+      li(data-row='1', data-col='1', data-sizex='1', data-sizey='1')
+        div(data-id='issues', data-title='Issues', data-view='Number', style="background-color:#3bafff")
+    center
