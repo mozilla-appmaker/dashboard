@@ -6,6 +6,8 @@ setInterval(function() {
 	var counturl = "http://162.243.75.232/render?format=json&target=summarize(stats_counts.appmaker.app_published,'10year')"
 	request.get({url:counturl, json:true}, function (e, r, data) {
 		console.log(e,r,data);
+		var x = JSON.parse(data);
+		console.log('parsed', x);
 		console.log(data['datapoints'][0][0]);
 		send_event('app_count', {current: data['datapoints'][0][0],
 			last: last_app_count});
