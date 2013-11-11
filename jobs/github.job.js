@@ -54,4 +54,4 @@ setInterval(function() {
     // send_event('contributors', {value: contribs}); // never goes down
     // send_event('pulls', {current: current_pulls, last: last_pulls});
 
-}, 2 * 1000);
+}, 200 * 1000);
