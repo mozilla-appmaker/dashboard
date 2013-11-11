@@ -17,6 +17,7 @@ var open_issues = 0;
 var watchers = 0;
 
 function updateGithubMetrics() {
+    console.log('updating github metrics');
     var last_pulls = pulls;
     var last_watchers = watchers;
     var last_forks = forks;
@@ -39,4 +40,4 @@ updateGithubMetrics();
 
 setInterval(function() {
     updateGithubMetrics();
-}, hour);
+}, 2 * second);
