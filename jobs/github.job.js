@@ -40,4 +40,4 @@ updateGithubMetrics();
 
 setInterval(function() {
     updateGithubMetrics();
-}, 2 * second);
+}, hour);
