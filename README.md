@@ -1,1 +1,1 @@
-Check out http://fabiocaseri.github.io/dashing-js for more information.
+Live at http://appdash-js.herokuapp.com/dashboard
