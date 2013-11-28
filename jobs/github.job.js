@@ -8,7 +8,7 @@ console.log("TOKEN =", token);
 var client = github.client(token);
 
 var ghme = client.me();
-var repo = client.repo('mozilla/appmaker');
+var repo = client.repo('mozilla-appmaker/appmaker');
 
 var contributors = 0;
 var pulls = 0;
